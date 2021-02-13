@@ -1,0 +1,109 @@
+===========================|Server Structure Info|===========================-
+This Channel Will explain the Servers Structure. 
+If you need further assistance. feel free to ask!
+================================|Roles|================================-
+So to start off, you might have noticed the Roles, are closely tied to
+Channel Specific Permissions. and ill often call them Chan Perms from
+this point moving forward.
+First of all @BASE (default) is the default configuration for @everyone
+which you can see is simply a role made to mimick @everyone and also,
+makes locked hannels not have a lock, which can be interpreted it was
+done for that purpose, however it was done so in order to replace
+@everyone. and to allow for more usability
+now @everyone can also be differentiated from @everyone because 
+mentioning it, will show up the real one and the other @everyone role
+#2 it an be seen above the @everyone  role in the Role Order. And #3 
+in Channel perms. #4 Assigned member Roles and finally #5 you can also
+see it has a slightly different color from @everyone.
+Last thing i will say, is that @everyone is the role every member that
+isnt @.everyone has, and should be automatically assigned to new members.
+Onto @.everyone its the Role assigned to every Staff Member, which is 
+anyone with atleast the Manage Messages permission. it cannot be 
+unassigned, or edited, and can only be assigned/changed by the Owner.
+It, can also be used for managing bulk permissions. for example, if a 
+channel needs to be locked, to only the Admin or the bot. the Channels
+Permissions can be made to block @everyone and @.everyone from viewing
+the channel, it can also be used to for example make it so although 
+@everyone and @.everyone are blocked. exceptions can be made. by adding
+a role or a member to the channels perms. however, i havent used it on 
+this Server.
+@Member is the Role just above @everyone and is assigned to every 
+member.
+and @Verified  should be assigned to members that have passed the 
+verification process. Also, Staff. MUST have passed the verification
+process otherwise, they will be ineligible of Obtaining Staff 
+privilege.
+@Muted this role should be granted to Users who have broken the Rules.
+and because of the way The Server has been structured. the @Member
+or @Verified and @everyone or @.everyone should temporarily be removed
+and given the @Muted Role for the durration of the Muting. otherwise,
+you would need to change the structure.
+@Vc Mod (4) by the definition of Staff in this Server, Voice Chat mods
+don't count as staff.. however. they can still moderate Vc channels.
+@Msg Mod (3) Can Moderate Channel Messages, and counts as a staff 
+member, so can be idenified by @.everyone
+@Mem Mod (3) Member Moderators, can manage members, and have the Perms
+of the previous Role.
+@Chan Webhk Manager (2) Chan Webhook managers, can manage Webhooks on
+Channels. They also have all the perms of previous Roles, the same 
+for every next role up to @Admin (0) which has every perm!
+@Chan Manager (2) Channel Managers can Manage Channels, however if the
+@.everyone role on a channels perms doesn't allow it, the user won't
+be able to, however if the role is added to that chan perms, 
+it will obtain privilege to do so independently of the @.everyone 
+role because of the way the Discord API works
+@Role Manager (1) Role Managers can Delete, Change, or Create any 
+roles below the Role. Thats why its so dangerous. and should be 
+granted to A manager who has shown both trust, and compotence. 
+But it cannot again bypass Chan Perms.
+@Server Manager (1) Server Managers, can also edit the categories.
+However, they cannot do so if the role hasn't been added to the 
+Channel, and @.everyone doesn't allow it in The Channel Perms.
+@View Logs (1) The Users with this Role, can view the Server 
+Logs. and is the default for this Servers Structure, it can be 
+changed by using Bot logs. But, can primarily be granted to 
+Managers who Should Have Permissions to View the Logs, without
+having Admin privilege.
+@Admin (0) The Administrator Role. Users with @Admin (0) can do 
+anything on the Server that the Discord API allows, so ofcourse,
+with such power also comes with the highest amount
+of responsibilty.
+@Bot (0)+ This role should be granted to any Bots, that require
+Admin Privilege. and Admins should obtain permission from the 
+Owner to Invite any Bot that requires Admin Privilege.
+@Suspended A Role given to any Staff member that has violated
+the Server Guidelines by intentionally damaging the 
+Server Structure.
+@Owner ofcourse The Role Given to the Owner.
+And thats all there is to @Roles For this Server.
+==========================|Channel Weaknesses|===========================-
+So, first of all Channels, are What the Servers Permission Structure
+Relies on.
+And, the Server takes advantage of Channel Perms in order to control what
+every role can do, however its limited due to how the Discord API works.
+For example, if a Role as been added to a channel, and lets say, the Role
+has been denied the permission to View the Channel. Now lets assume the 
+User who has that Role, also has a different Role. if we add that Role
+and allow it that permission, The Role higher In the Role Order was 
+denied. the User who has both of the Roles, will obtain that privilege
+on the Channel. Because the Discord API 
+Doesn't care about the Role Order.
+Now, another weakness is that by design, On Discord Raids CANNOT be 
+prevented, If for example, a moderator, exploits their privilege. unless
+there is someone actively looking over the Server Activity. they will be
+able to raid, thats why we Only grant managers privilege the Abilty to do
+anything That may change the Server Structure, or Channels. and the 
+Guidelines for Staff are required to be Strict for that reason.
+Now, the reason @Role Manager (1) is so high in the Role Order is because,
+as i said the Discord API, simply ignores the Role Order. And for
+example, lets say we have a channel, and we have a Role with the Manage
+Roles perm. and we add it to that Channel. even if you don't change the
+default perms in the Channels Perms, the User with that Role will be able
+to grant themselves any permission, because by default the Manage Roles
+perm has permissions to edit Channel perms. they will Also be able to 
+edit/remove or add any other Role on that channels perms. And will even
+be able to even obtain privilege to delete the channel.
+And that's why its so dangerous because the Discord API is a bit flawed
+since it ingores the Role Order.
+However, it can be mitigated by not allowing the Role perms or not 
+adding it to the Channel.
